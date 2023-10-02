@@ -1,6 +1,20 @@
-# fastn Track - Order Summary Component
+![image](https://github.com/sreejitaduttaa/fastn-order-summary-component/assets/136649577/7abe1d1c-5e6d-4f95-a422-78699ca8959e)# fastn Track - Order Summary Component
 
 ![Design preview for the FAQ accordion card coding challenge](./assets/design/desktop-preview.jpg)
+
+
+## Information about the project
+
+It is an Interactive Rating Component.
+
+*Preview of the component provided has been replicated!*
+
+**Features**
+
+- View the optimal layout for the component depending on your device's screen size
+- See hover states for all interactive elements on the page
+- Texts in the component can be modified by the user according to their need
+
 
 ## Welcome! 👋
 
