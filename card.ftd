@@ -1,0 +1,192 @@
+-- boolean $showb: false
+-- boolean $showc: false
+-- boolean $showa: false
+
+
+-- component order-card:
+caption heading:
+body desc:
+string item:
+string price:
+
+-- ftd.column:
+width.fixed.responsive: $res-width
+height.fixed.responsive: $res-height
+overflow: hidden
+align-content: center
+border-radius.px: 15
+shadow: $s1
+background.solid: #fff
+
+-- ftd.image: $assets.files.assets.images.illustration-hero.svg
+height.fixed.responsive: $res-image-height
+width: fill-container
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+overflow: hidden
+padding.responsive: $res-padding
+
+-- ftd.text: $order-card.heading
+role: $heading-type
+color: #212F47
+align-self: center
+text-align: center
+
+-- ftd.text: $order-card.desc
+role: $desc-type
+color: #83899F
+align-self: center
+text-align: center
+padding-top.px: 16
+
+-- ftd.row:
+width: fill-container
+background.solid: #F8F9FE
+border-radius.px: 10
+padding.px: 12
+margin-top.px: 15
+spacing: space-between
+
+-- ftd.row:
+height: fill-container
+spacing.fixed.px: 10
+
+-- ftd.image: $assets.files.assets.images.icon-music.svg
+height.fixed.px: 30
+
+-- ftd.column:
+height: fill-container
+spacing: space-evenly
+
+-- ftd.text: $order-card.item
+role: $item-type
+color: #212F47
+align-self: center
+text-align: center
+
+-- ftd.text: $order-card.price
+role: $price-type
+color: #83899F
+align-self: center
+text-align: center
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.text: Change
+role: $change-type
+align-self: center
+text-align: center
+cursor: pointer
+color if { showc }: #766CF1
+color: #3829e0
+$on-mouse-enter$: $ftd.set-bool($a = $showc, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $showc, v = false)
+link: index.html
+style if { !showc }: underline
+
+-- end: ftd.row
+
+-- ftd.container:
+cursor: pointer
+margin-top.px: 20
+border-radius.px: 5
+padding.px: 10
+background.solid if { showb }: #766CF1
+background.solid: #3829e0
+width: fill-container
+link: index.html
+$on-mouse-enter$: $ftd.set-bool($a = $showb, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $showb, v = false)
+shadow: $s2
+
+-- ftd.text: Proceed to Payment
+role: $button-type
+color: white
+text-align: center
+
+-- end: ftd.container
+
+-- ftd.text: Cancel Order
+role: $cancel-type
+cursor: pointer
+color if { showa }: #18223B
+color: #83899F
+align-self: center
+text-align: center
+margin-top.px: 20
+$on-mouse-enter$: $ftd.set-bool($a = $showa, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $showa, v = false)
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: order-card  
+
+
+-- ftd.type heading-type:
+font-family: $assets.fonts.Red-Hat-Display
+size.px: 18
+weight: 900
+
+-- ftd.type desc-type:
+font-family: $assets.fonts.Red-Hat-Display
+size.px: 11
+weight: 500
+
+-- ftd.type item-type:
+font-family: $assets.fonts.Red-Hat-Display
+size.px: 11
+weight: 700
+
+-- ftd.type price-type:
+font-family: $assets.fonts.Red-Hat-Display
+size.px: 11
+weight: 500
+
+-- ftd.type change-type:
+font-family: $assets.fonts.Red-Hat-Display
+size.px: 9
+weight: 900
+
+-- ftd.type button-type:
+font-family: $assets.fonts.Red-Hat-Display
+size.px: 10
+weight: 700
+
+-- ftd.type cancel-type:
+font-family: $assets.fonts.Red-Hat-Display
+size.px: 10
+weight: 900
+
+-- ftd.shadow s2: 
+color: #DCD9F7
+x-offset.px: 2
+y-offset.px: 10 
+blur.px: 10
+
+-- ftd.shadow s1: 
+color: #C8D2F6
+x-offset.px: 2
+y-offset.px: 2
+blur.px: 30
+
+-- ftd.responsive-length res-height:  
+desktop.px: 440  
+mobile.px: 400 
+
+-- ftd.responsive-length res-width:  
+desktop.px: 290  
+mobile.px: 230 
+
+-- ftd.responsive-length res-image-height:  
+desktop.px: 180  
+mobile.px: 140 
+
+-- ftd.responsive-length res-padding:  
+desktop.px: 30  
+mobile.px: 22 
