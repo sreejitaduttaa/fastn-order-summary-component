@@ -118,6 +118,7 @@ color: #83899F
 align-self: center
 text-align: center
 margin-top.px: 20
+link: index.html
 $on-mouse-enter$: $ftd.set-bool($a = $showa, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $showa, v = false)
 
