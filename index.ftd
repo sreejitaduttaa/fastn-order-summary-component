@@ -1,40 +1,30 @@
--- ds.page: Welcome to doc-site
+-- import: sreejitaduttaa.github.io/fastn-order-summary-component/card
 
+-- ftd.background-size.length bg-size:
+x.percent: 100
+y.percent: 40
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- ftd.background-image bg-image: 
+src:  $assets.files.assets.images.pattern-background-desktop.svg
+repeat: no-repeat 
+size: $bg-size
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- ftd.container:
+width: fill-container
+height: fill-container
+background.solid: #E0E8FF
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- ftd.column: 
+width: fill-container
+height: fill-container
+align-content: center
+background.image:  $bg-image
 
--- ds.h3: 🚀 Fast Track 
+-- card.order-card: Order Summary
+desc: You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+item: Annual Plan
+price: &dollar; 59.99/year
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- end: ftd.column
 
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
-
--- ds.h3: 🎯 Used by?
-
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: ftd.container
